@@ -19,33 +19,64 @@ html {
   box-sizing: inherit;
 }
 
-.moths {
+.cards {
   line-height: 1.3rem;
-
+  font-weight: normal;
+  list-style-type: none;
 }
 
-.moth-img {
+.cards-img img {
   width: 50px;
-
+  display: block;
+  margin: 0 auto;
 }
 
-.card-body h2 {
-
+.cards-main h2 {
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: normal;
 }
 
-.card-body p {
-
+.card-main p {
+  font-weight: normal;
 }
 
 @media only screen and (min-width: 38em) {
 
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
 
-}
+  h1,
+  p {
+    margin: 0 0 1.4rem;
+  }
 
-@media only screen and (min-width: 60em) {
+  .cards {
+    display: inline-block;
+  }
 
-}
+  @media only screen and (min-width: 60em) {
 
-@media only screen and (min-width: 90em) {
+    html {
+      font-size: 120%;
+      line-height: 1.5;
+    }
+
+    h1,
+    p {
+      margin: 0 0 1.5rem;
+    }
+
+  }
+
+  @media only screen and (min-width: 90em) {
+
+    html {
+      font-size: 130%;
+    }
+
+  }
 
 }
