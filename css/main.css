@@ -25,22 +25,46 @@ html {
   list-style-type: none;
 }
 
-.cards-img img {
+.card-img {
+  margin-bottom: 1.3rem;
+}
+
+.card-img img {
   width: 50px;
   display: block;
   margin: 0 auto;
 }
 
-.cards-main h2 {
+.card-body h2 {
   font-size: 1.5rem;
+  margin: 1rem 0 0;
+  font-weight: normal;
+}
+
+.card-body p {
+  font-weight: normal;
+}
+
+ul {
+  padding: 0;
   margin: 0;
-  font-weight: normal;
+}
+@media only screen and (min-width: 25em) {
+
+html {
+  font-size: 100%;
+  line-height: 1.4;
 }
 
-.card-main p {
-  font-weight: normal;
+.cards {
+  display: inline-block;
 }
 
+.card-img img {
+  display: block;
+  margin: 0 auto;
+  width: 12%
+}
 @media only screen and (min-width: 38em) {
 
   html {
@@ -57,26 +81,57 @@ html {
     display: inline-block;
   }
 
-  @media only screen and (min-width: 60em) {
-
-    html {
-      font-size: 120%;
-      line-height: 1.5;
-    }
-
-    h1,
-    p {
-      margin: 0 0 1.5rem;
-    }
-
+  .card-img img{
+    display: block;
+    margin: 0 auto;
   }
 
-  @media only screen and (min-width: 90em) {
-
-    html {
-      font-size: 130%;
-    }
-
+  .card-body {
+    max-width: 30%;
+    display: block;
+    padding: 0;
   }
+
+  .card-img div:nth-child(1) {
+    max-width: 50px;
+  }
+
+  .card {
+  display: inline-block;
+}
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+  .cards {
+    display: inline-block;
+  }
+  h1,
+  p {
+    margin: 0 0 1.5rem;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+  }
+
+  .cards {
+    display:inline-block;
+    text-align: left;
+  }
+
+  .card-img {
+    display: inline-block;
+    width: 50px;
+   }
 
 }
